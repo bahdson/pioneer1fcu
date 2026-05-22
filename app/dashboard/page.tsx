@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { DashboardSidebar } from '@/components/dashboard-sidebar'
 import { BalanceCard } from '@/components/balance-card'
+import { ChatWidget } from '@/components/chat-widget'
 import { TrendingUp, Send, Download, Bitcoin } from 'lucide-react'
 import Link from 'next/link'
 
@@ -223,6 +224,9 @@ export default function DashboardPage() {
           </div>
         </motion.div>
       </main>
+      
+      {/* Chat Widget */}
+      <ChatWidget />
     </div>
   )
 }
